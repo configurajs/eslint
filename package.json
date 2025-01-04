@@ -34,7 +34,7 @@
     "prepare": "simple-git-hooks",
     "dev": "tsup src/index.ts --format esm --out-dir=lib --watch --dts",
     "build": "tsup src/index.ts --format esm,cjs --out-dir=lib --dts --clean",
-    "lint": "eslint . --fix --ext .ts,.js",
+    "lint": "eslint . --fix",
     "format": "prettier --write .",
     "clean": "rimraf node_modules lib",
     "release": "pnpm build && vr release"
@@ -61,8 +61,15 @@
     "tsup": "8.3.5",
     "typescript": "5.3.3"
   },
+  "peerDependencies": {
+    "eslint": "^9.17.0"
+  },
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "pnpm": ">=9.0"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.17.0",
+    "globals": "^15.14.0"
   }
 }

@@ -7,6 +7,13 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@eslint/js':
+        specifier: ^9.17.0
+        version: 9.17.0
+      globals:
+        specifier: ^15.14.0
+        version: 15.14.0
     devDependencies:
       '@types/node':
         specifier: ^22.8.1
@@ -793,6 +800,10 @@ packages:
 
   globals@14.0.0:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
+    engines: {node: '>=18'}
+
+  globals@15.14.0:
+    resolution: {integrity: sha512-OkToC372DtlQeje9/zHIo5CT8lRP/FUgEOKBEhU4e0abL7J7CD24fD9ohiLN5hagG/kWCYj4K5oaxxtj2Z0Dig==}
     engines: {node: '>=18'}
 
   graceful-fs@4.2.11:
@@ -2053,6 +2064,8 @@ snapshots:
       path-scurry: 2.0.0
 
   globals@14.0.0: {}
+
+  globals@15.14.0: {}
 
   graceful-fs@4.2.11: {}
 
