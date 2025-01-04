@@ -1,0 +1,68 @@
+{
+  "name": "@configurajs/eslint",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "lib/index.cjs",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.cjs"
+    }
+  },
+  "description": "A simple eslint flat configuration",
+  "keywords": [
+    "eslint",
+    "preset",
+    "config"
+  ],
+  "author": "haoziqaq <357229046@qq.com>",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/configurajs/eslint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/configurajs/eslint/issues"
+  },
+  "scripts": {
+    "prepare": "simple-git-hooks",
+    "dev": "tsup src/index.ts --format esm --out-dir=lib --watch --dts",
+    "build": "tsup src/index.ts --format esm,cjs --out-dir=lib --dts --clean",
+    "lint": "eslint . --fix --ext .ts,.js",
+    "format": "prettier --write .",
+    "clean": "rimraf node_modules lib",
+    "release": "pnpm build && vr release"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec nano-staged --allow-empty",
+    "commit-msg": "pnpm exec vr commit-lint -p $1"
+  },
+  "nano-staged": {
+    "*.{md}": "prettier --write",
+    "*.{ts}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.1",
+    "@varlet/release": "^0.3.1",
+    "eslint": "^9.17.0",
+    "nano-staged": "0.8.0",
+    "prettier": "^3.1.0",
+    "rimraf": "^6.0.1",
+    "simple-git-hooks": "^2.11.1",
+    "tsup": "8.3.5",
+    "typescript": "5.3.3"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "pnpm": ">=9.0"
+  }
+}
