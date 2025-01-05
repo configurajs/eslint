@@ -4,6 +4,6 @@ export default defineConfig({
   overrides: [
     {
       ignores: ['lib'],
-    }
-  ]
+    },
+  ],
 })
