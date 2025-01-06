@@ -1,7 +1,7 @@
-import vuePlugin from 'eslint-plugin-vue'
-import vueParser from 'vue-eslint-parser'
 import tsParser from '@typescript-eslint/parser'
 import { Linter } from 'eslint'
+import vuePlugin from 'eslint-plugin-vue'
+import vueParser from 'vue-eslint-parser'
 import { createConfigName } from '../utils'
 
 export interface CreateVueConfigOptions {

@@ -1,6 +1,5 @@
 // @ts-expect-error - no type declaration file
 import commentsPlugin from '@eslint-community/eslint-plugin-eslint-comments'
-
 import { Linter } from 'eslint'
 import { createConfigName } from '../utils'
 

@@ -1,7 +1,7 @@
-import globals from 'globals'
-import importPlugin from 'eslint-plugin-import-x'
-import { createConfigName } from '../utils'
 import { Linter } from 'eslint'
+import importPlugin from 'eslint-plugin-import-x'
+import globals from 'globals'
+import { createConfigName } from '../utils'
 
 export function createJsConfig(): Linter.Config[] {
   return [

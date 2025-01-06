@@ -1,5 +1,5 @@
-import prettierPlugin from 'eslint-plugin-prettier'
 import { Linter } from 'eslint'
+import prettierPlugin from 'eslint-plugin-prettier'
 import { createConfigName } from '../utils'
 
 export function createPrettierConfig(): Linter.Config[] {

@@ -1,13 +1,13 @@
 import { Linter } from 'eslint'
 import {
+  createCommentsConfig,
+  createIgnoresConfig,
   createJsConfig,
   createJsxConfig,
-  createTsConfig,
-  createCommentsConfig,
   createPrettierConfig,
-  createVueConfig,
-  createIgnoresConfig,
   createReactConfig,
+  createTsConfig,
+  createVueConfig,
 } from './configs'
 import { createRulesConfig } from './configs/rules'
 

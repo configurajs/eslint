@@ -1,8 +1,3 @@
-/**
- * @type {import("prettier").Config}
- */
-export default {
-  printWidth: 120,
-  singleQuote: true,
-  semi: false,
-}
+import { defineConfig } from '@configurajs/prettier'
+
+export default defineConfig()

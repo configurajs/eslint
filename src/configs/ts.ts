@@ -1,7 +1,7 @@
 import tsPlugin from '@typescript-eslint/eslint-plugin'
 import tsParser from '@typescript-eslint/parser'
-import { createConfigName } from '../utils'
 import { Linter } from 'eslint'
+import { createConfigName } from '../utils'
 
 export interface CreateTsConfigOptions {
   exts?: string[]

@@ -1,7 +1,7 @@
 import reactPlugin from '@eslint-react/eslint-plugin'
+import { Linter } from 'eslint'
 // @ts-expect-error doesn't have types
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
-import { Linter } from 'eslint'
 import { createConfigName } from '../utils'
 
 export function createReactConfig(): Linter.Config[] {
