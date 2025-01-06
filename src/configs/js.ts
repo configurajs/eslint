@@ -5,7 +5,6 @@ import { createConfigName } from '../utils'
 import { Linter } from 'eslint'
 
 export function createJsConfig(): Linter.Config[] {
-  console.log(importPlugin)
   return [
     {
       name: createConfigName('js/setup'),
