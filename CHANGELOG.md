@@ -1,4 +1,13 @@
-## 0.0.1 (2025-01-04)
+## [0.0.2](https://github.com/configurajs/eslint/compare/v0.0.1...v0.0.2) (2025-01-06)
+
+### Features
+
+- support imports ([9ca3fb9](https://github.com/configurajs/eslint/commit/9ca3fb99bdb3e091d8a1cf2f2d78cf2cdc04bcb5))
+- support ts, tsx, jsx, eslint comments ([8981444](https://github.com/configurajs/eslint/commit/89814446452f0cd56db76fee63162c5018310b40))
+- support vue and optional enabled ([76784fb](https://github.com/configurajs/eslint/commit/76784fb0ab19051416cf0c056e0eac1a91320c89))
+- wip ([4b0e094](https://github.com/configurajs/eslint/commit/4b0e0946129bafed3afee4717c3def61871372e3))
+
+## [0.0.1](https://github.com/configurajs/eslint/compare/d77e9e0f9b7aac9e6a0e231c981918afeaa41ee6...v0.0.1) (2025-01-04)
 
 ### Features
 
