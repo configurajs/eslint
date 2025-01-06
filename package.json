@@ -21,7 +21,7 @@
   "author": "haoziqaq <357229046@qq.com>",
   "license": "MIT",
   "files": [
-    "lib"
+    "dist"
   ],
   "repository": {
     "type": "git",
