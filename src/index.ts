@@ -9,6 +9,7 @@ import {
   createIgnoresConfig,
   createReactConfig,
 } from './configs'
+import { createRulesConfig } from './configs/rules'
 
 export interface DefineConfigOptions {
   ts?: boolean
@@ -16,12 +17,22 @@ export interface DefineConfigOptions {
   vue?: boolean
   react?: boolean
   comments?: boolean
+  rules?: Linter.RulesRecord
   ignores?: string[]
   overrides?: Linter.Config[]
 }
 
 export function defineConfig(options: DefineConfigOptions = {}): Linter.Config[] {
-  const { ts = true, jsx = true, vue = true, react = false, comments = true, ignores = [], overrides = [] } = options
+  const {
+    ts = true,
+    jsx = true,
+    vue = true,
+    react = false,
+    comments = true,
+    ignores = [],
+    rules = {},
+    overrides = [],
+  } = options
 
   const configs: Linter.Config[] = [...createIgnoresConfig({ ignores }), ...createJsConfig(), ...createPrettierConfig()]
 
@@ -45,5 +56,5 @@ export function defineConfig(options: DefineConfigOptions = {}): Linter.Config[]
     configs.push(...createReactConfig())
   }
 
-  return [...configs, ...overrides]
+  return [...configs, ...createRulesConfig(rules), ...overrides]
 }
