@@ -10,5 +10,13 @@ export function createPrettierConfig(): Linter.Config[] {
         prettier: prettierPlugin,
       },
     },
+    {
+      name: createConfigName('prettier/rules'),
+      rules: {
+        'prettier/prettier': 'error',
+        'arrow-body-style': 'off',
+        'prefer-arrow-callback': 'off',
+      },
+    },
   ]
 }

@@ -4,7 +4,7 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "bundler",
-    "outDir": "./lib",
+    "outDir": "./dist",
     "strict": true,
     "declaration": true,
     "skipLibCheck": true,

@@ -5,7 +5,7 @@ export function createJsxConfig(): Linter.Config[] {
   return [
     {
       name: createConfigName('jsx/setup'),
-      files: ['**/*.?([cm])jsx', '**/*.?([cm])tsx'],
+      files: ['**/*.?([cm])[jt]sx'],
     },
   ]
 }

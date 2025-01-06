@@ -1,5 +1,3 @@
-import { defineConfig } from './lib/index.js'
+import { defineConfig } from './dist/index.js'
 
-export default defineConfig({
-  ignores: ['lib'],
-})
+export default defineConfig()
