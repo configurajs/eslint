@@ -1,3 +1,9 @@
+## [0.0.6](https://github.com/configurajs/eslint/compare/v0.0.5...v0.0.6) (2025-01-06)
+
+### Bug Fixes
+
+- fix package json ([cc9932d](https://github.com/configurajs/eslint/commit/cc9932d701386ee5ec5ab666dc88a4da6e8efc6e))
+
 ## [0.0.5](https://github.com/configurajs/eslint/compare/v0.0.4...v0.0.5) (2025-01-06)
 
 ### Bug Fixes
