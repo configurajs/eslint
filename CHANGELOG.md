@@ -1,3 +1,9 @@
+## [0.0.7](https://github.com/configurajs/eslint/compare/v0.0.6...v0.0.7) (2025-01-06)
+
+### Features
+
+- support custom rules ([db39f75](https://github.com/configurajs/eslint/commit/db39f755c5085982c9113e492cbde5fe6d897a22))
+
 ## [0.0.6](https://github.com/configurajs/eslint/compare/v0.0.5...v0.0.6) (2025-01-06)
 
 ### Bug Fixes
