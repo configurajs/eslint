@@ -1,18 +1,11 @@
-import { Linter } from "eslint";
-import { createConfigName } from "../utils";
+import { Linter } from 'eslint'
+import { createConfigName } from '../utils'
 
 export function createJsxConfig(): Linter.Config[] {
   return [
     {
-      name: createConfigName("jsx/setup"),
-      files: ["**/*.?([cm])jsx", "**/*.?([cm])tsx"],
-      languageOptions: {
-        parserOptions: {
-          ecmaFeatures: {
-            jsx: true,
-          },
-        },
-      },
+      name: createConfigName('jsx/setup'),
+      files: ['**/*.?([cm])jsx', '**/*.?([cm])tsx'],
     },
-  ];
+  ]
 }
