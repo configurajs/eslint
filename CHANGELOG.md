@@ -1,3 +1,9 @@
+## [0.0.3](https://github.com/configurajs/eslint/compare/v0.0.2...v0.0.3) (2025-01-06)
+
+### Features
+
+- support react and enhance js, prettier ([872d70a](https://github.com/configurajs/eslint/commit/872d70ab1b3f76d53279aaac296ec94482a12d48))
+
 ## [0.0.2](https://github.com/configurajs/eslint/compare/v0.0.1...v0.0.2) (2025-01-06)
 
 ### Features
