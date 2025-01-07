@@ -88,6 +88,15 @@ export function createTsConfig(options: CreateTsConfigOptions = {}): Linter.Conf
             allowTernary: true,
           },
         ],
+        '@typescript-eslint/no-unused-vars': [
+          'error',
+          {
+            args: 'none',
+            caughtErrors: 'none',
+            ignoreRestSiblings: true,
+            vars: 'all',
+          },
+        ],
       },
     },
   ]
