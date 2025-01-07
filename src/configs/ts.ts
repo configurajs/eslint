@@ -27,10 +27,6 @@ export function createTsConfig(options: CreateTsConfigOptions = {}): Linter.Conf
         parserOptions: {
           sourceType: 'module',
           extraFileExtensions: exts.map((ext) => `.${ext}`),
-          tsconfigRootDir: process.cwd(),
-          projectService: {
-            allowDefaultProject: ['./*.js'],
-          },
         },
       },
     },
