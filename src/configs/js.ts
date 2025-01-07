@@ -106,7 +106,6 @@ export function createJsConfig(): Linter.Config[] {
         'default-param-last': 'error',
         'no-caller': 'error',
         'no-empty': ['error', { allowEmptyCatch: true }],
-        'no-with': 'off',
         'prefer-const': 'error',
         'prefer-rest-params': 'error',
         'require-await': 'error',
