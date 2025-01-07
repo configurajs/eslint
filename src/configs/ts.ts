@@ -12,8 +12,6 @@ export function createTsConfig(options: CreateTsConfigOptions = {}): Linter.Conf
 
   const files = ['**/*.?([cm])ts', '**/*.?([cm])tsx', ...exts.map((ext) => `**/*.${ext}`)]
 
-  console.log(tsPlugin.configs['eslint-recommended'].overrides![0].rules)
-
   return [
     {
       name: createConfigName('ts/setup'),
