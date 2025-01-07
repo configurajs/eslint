@@ -1,42 +1,42 @@
 {
   "name": "@configurajs/eslint",
   "version": "0.0.8",
-  "type": "module",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "sideEffects": false,
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
-  },
   "description": "A simple eslint flat configuration",
   "keywords": [
     "eslint",
     "preset",
     "config"
   ],
-  "author": "haoziqaq <357229046@qq.com>",
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
+  "bugs": {
+    "url": "https://github.com/configurajs/eslint/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/configurajs/eslint.git"
   },
-  "bugs": {
-    "url": "https://github.com/configurajs/eslint/issues"
+  "license": "MIT",
+  "author": "haoziqaq <357229046@qq.com>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
   },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "prepare": "simple-git-hooks && pnpm build",
-    "dev": "tsup src/index.ts --format esm --watch --dts",
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
-    "lint": "eslint . --fix",
-    "format": "prettier --write .",
     "clean": "rimraf node_modules dist",
+    "dev": "tsup src/index.ts --format esm --watch --dts",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix",
+    "prepare": "simple-git-hooks && pnpm build",
     "release": "vr release"
   },
   "simple-git-hooks": {
@@ -49,6 +49,18 @@
       "prettier --write",
       "eslint --fix"
     ]
+  },
+  "dependencies": {
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
+    "@eslint-react/eslint-plugin": "^1.23.1",
+    "@typescript-eslint/eslint-plugin": "^8.19.0",
+    "@typescript-eslint/parser": "^8.19.0",
+    "eslint-plugin-import-x": "^4.6.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.14.0",
+    "vue-eslint-parser": "^9.4.3"
   },
   "devDependencies": {
     "@configurajs/prettier": "^0.0.2",
@@ -68,17 +80,5 @@
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "pnpm": ">=9.0"
-  },
-  "dependencies": {
-    "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
-    "@eslint-react/eslint-plugin": "^1.23.1",
-    "@typescript-eslint/eslint-plugin": "^8.19.0",
-    "@typescript-eslint/parser": "^8.19.0",
-    "eslint-plugin-import-x": "^4.6.1",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-vue": "^9.32.0",
-    "globals": "^15.14.0",
-    "vue-eslint-parser": "^9.4.3"
   }
 }
