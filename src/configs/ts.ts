@@ -67,15 +67,15 @@ export function createTsConfig(options: CreateTsConfigOptions = {}): Linter.Conf
         '@typescript-eslint/no-unnecessary-type-constraint': 'error',
         '@typescript-eslint/no-unsafe-declaration-merging': 'error',
         '@typescript-eslint/no-unsafe-function-type': 'error',
-        '@typescript-eslint/no-unused-vars': 'error',
         '@typescript-eslint/no-wrapper-object-types': 'error',
         '@typescript-eslint/prefer-as-const': 'error',
         '@typescript-eslint/prefer-namespace-keyword': 'error',
-        '@typescript-eslint/triple-slash-reference': 'error',
+        '@typescript-eslint/triple-slash-reference': 'off',
         '@typescript-eslint/ban-ts-comment': ['error', { 'ts-expect-error': 'allow-with-description' }],
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-for-in-array': 'off',
         '@typescript-eslint/no-empty-object-type': 'off',
+        '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/no-unused-expressions': [
           'error',
           {
