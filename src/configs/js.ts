@@ -91,6 +91,14 @@ export function createJsConfig(): Linter.Config[] {
         'require-yield': 'error',
         'use-isnan': 'error',
         'valid-typeof': 'error',
+        'no-unused-expressions': [
+          'error',
+          {
+            allowShortCircuit: true,
+            allowTaggedTemplates: true,
+            allowTernary: true,
+          },
+        ],
         'no-unused-vars': [
           'error',
           {
