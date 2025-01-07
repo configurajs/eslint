@@ -1,3 +1,9 @@
+## [0.0.12](https://github.com/configurajs/eslint/compare/v0.0.11...v0.0.12) (2025-01-07)
+
+### Features
+
+- **js:** add no-unused-expressions ([257cc83](https://github.com/configurajs/eslint/commit/257cc83100addf0fb0e85dfb27de4983ba6ce000))
+
 ## [0.0.11](https://github.com/configurajs/eslint/compare/v0.0.10...v0.0.11) (2025-01-07)
 
 ### Bug Fixes
