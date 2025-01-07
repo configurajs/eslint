@@ -1,3 +1,14 @@
+## [0.0.11](https://github.com/configurajs/eslint/compare/v0.0.10...v0.0.11) (2025-01-07)
+
+### Bug Fixes
+
+- remove type aware ([b35d2a5](https://github.com/configurajs/eslint/commit/b35d2a5b2c3e14f293f0a9ac2b71200bc4c23701))
+- **ts:** off triple-slash-reference, no-unused-vars ([d67179c](https://github.com/configurajs/eslint/commit/d67179ce679fef55f651768f9567736caaa8647c))
+
+### Features
+
+- **ts:** enhance ts rules ([aa772da](https://github.com/configurajs/eslint/commit/aa772da4679a04cb96cbd85ce5512777017a5f96))
+
 ## [0.0.10](https://github.com/configurajs/eslint/compare/v0.0.9...v0.0.10) (2025-01-07)
 
 ## [0.0.9](https://github.com/configurajs/eslint/compare/v0.0.8...v0.0.9) (2025-01-07)
