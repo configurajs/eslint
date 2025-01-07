@@ -80,7 +80,6 @@ export function createTsConfig(options: CreateTsConfigOptions = {}): Linter.Conf
         '@typescript-eslint/no-for-in-array': 'off',
         '@typescript-eslint/no-empty-object-type': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
-        '@typescript-eslint/no-extraneous-class': 'error',
         '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/prefer-literal-enum-member': 'error',
