@@ -139,12 +139,6 @@ export function createVueConfig(options: CreateVueConfigOptions): Linter.Config[
         'vue/no-lone-template': 'warn',
         'vue/no-multiple-slot-args': 'warn',
         'vue/this-in-template': 'warn',
-        'vue/multi-word-component-names': 'off',
-        'vue/require-component-is': 'off',
-        'vue/return-in-computed-property': 'off',
-        'vue/use-v-on-exact': 'off',
-        'vue/no-v-html': 'off',
-        'vue/order-in-components': 'off',
       },
     },
   ]
