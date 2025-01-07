@@ -1,3 +1,9 @@
+## [0.0.14](https://github.com/configurajs/eslint/compare/v0.0.13...v0.0.14) (2025-01-07)
+
+### Features
+
+- **ts:** add @typescript-eslint/no-unused-vars ([ebda86b](https://github.com/configurajs/eslint/commit/ebda86b63a48b98159e2dedab62d5379c8680a49))
+
 ## [0.0.13](https://github.com/configurajs/eslint/compare/v0.0.12...v0.0.13) (2025-01-07)
 
 ### Features
