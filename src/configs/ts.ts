@@ -80,6 +80,7 @@ export function createTsConfig(options: CreateTsConfigOptions = {}): Linter.Conf
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/prefer-literal-enum-member': 'error',
         '@typescript-eslint/unified-signatures': 'error',
+        '@typescript-eslint/no-use-before-define': ['error', { classes: false, functions: false, variables: true }],
         '@typescript-eslint/no-unused-expressions': [
           'error',
           {
