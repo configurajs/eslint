@@ -12,6 +12,8 @@ export function createTsConfig(options: CreateTsConfigOptions = {}): Linter.Conf
 
   const files = ['**/*.?([cm])ts', '**/*.?([cm])tsx', ...exts.map((ext) => `**/*.${ext}`)]
 
+  console.log(tsPlugin.configs.strict.rules)
+
   return [
     {
       name: createConfigName('ts/setup'),
@@ -34,6 +36,10 @@ export function createTsConfig(options: CreateTsConfigOptions = {}): Linter.Conf
       name: createConfigName('ts/rules'),
       files,
       rules: {
+        'no-array-constructor': 'off',
+        'no-unused-expressions': 'off',
+        'no-unused-vars': 'off',
+        'no-useless-constructor': 'off',
         'constructor-super': 'off',
         'getter-return': 'off',
         'no-class-assign': 'off',
@@ -76,6 +82,14 @@ export function createTsConfig(options: CreateTsConfigOptions = {}): Linter.Conf
         '@typescript-eslint/no-for-in-array': 'off',
         '@typescript-eslint/no-empty-object-type': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-dynamic-delete': 'error',
+        '@typescript-eslint/no-extraneous-class': 'error',
+        '@typescript-eslint/no-invalid-void-type': 'error',
+        '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
+        '@typescript-eslint/no-non-null-assertion': 'error',
+        '@typescript-eslint/no-useless-constructor': 'error',
+        '@typescript-eslint/prefer-literal-enum-member': 'error',
+        '@typescript-eslint/unified-signatures': 'error',
         '@typescript-eslint/no-unused-expressions': [
           'error',
           {
