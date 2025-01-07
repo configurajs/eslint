@@ -104,7 +104,6 @@ export function createJsConfig(): Linter.Config[] {
         curly: 'error',
         yoda: 'error',
         'default-param-last': 'error',
-        'max-params': ['error', 3],
         'no-caller': 'error',
         'no-empty': ['error', { allowEmptyCatch: true }],
         'no-with': 'off',
