@@ -1,3 +1,9 @@
+## [0.0.13](https://github.com/configurajs/eslint/compare/v0.0.12...v0.0.13) (2025-01-07)
+
+### Features
+
+- **ts:** add no-use-before-define ([ecbfb8c](https://github.com/configurajs/eslint/commit/ecbfb8c727732f0882272f630a07c800f7ffe0ee))
+
 ## [0.0.12](https://github.com/configurajs/eslint/compare/v0.0.11...v0.0.12) (2025-01-07)
 
 ### Features
