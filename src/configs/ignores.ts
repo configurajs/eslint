@@ -32,6 +32,7 @@ export function createIgnoresConfig(options: CreateIgnoresConfigOptions = {}): L
         '**/.vercel',
         '**/.changeset',
         '**/.idea',
+        '**/.vscode',
         '**/.cache',
         '**/.output',
         '**/.vite-inspect',
