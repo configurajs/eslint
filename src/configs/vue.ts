@@ -6,10 +6,51 @@ import { createConfigName } from '../utils'
 
 export interface CreateVueConfigOptions {
   ts: boolean
+  version: 2 | 3
 }
 
 export function createVueConfig(options: CreateVueConfigOptions): Linter.Config[] {
-  const { ts } = options
+  const { ts, version } = options
+
+  const rules: Partial<Linter.RulesRecord> =
+    version === 2
+      ? {
+          'vue/comment-directive': 'error',
+          'vue/no-multiple-template-root': 'error',
+          'vue/no-v-for-template-key': 'error',
+          'vue/no-v-model-argument': 'error',
+          'vue/valid-v-bind-sync': 'error',
+        }
+      : {
+          'vue/no-v-for-template-key-on-child': 'error',
+          'vue/no-deprecated-data-object-declaration': 'error',
+          'vue/no-deprecated-destroyed-lifecycle': 'error',
+          'vue/no-deprecated-dollar-listeners-api': 'error',
+          'vue/no-deprecated-dollar-scopedslots-api': 'error',
+          'vue/no-deprecated-events-api': 'error',
+          'vue/no-deprecated-filter': 'error',
+          'vue/no-deprecated-functional-template': 'error',
+          'vue/no-deprecated-html-element-is': 'error',
+          'vue/no-deprecated-inline-template': 'error',
+          'vue/no-deprecated-props-default-this': 'error',
+          'vue/no-deprecated-router-link-tag-prop': 'error',
+          'vue/no-deprecated-scope-attribute': 'error',
+          'vue/no-deprecated-slot-attribute': 'error',
+          'vue/no-deprecated-slot-scope-attribute': 'error',
+          'vue/no-deprecated-v-bind-sync': 'error',
+          'vue/no-deprecated-v-is': 'error',
+          'vue/no-deprecated-v-on-native-modifier': 'error',
+          'vue/no-deprecated-v-on-number-modifiers': 'error',
+          'vue/no-deprecated-vue-config-keycodes': 'error',
+          'vue/no-lifecycle-after-await': 'error',
+          'vue/valid-v-is': 'error',
+          'vue/valid-v-memo': 'error',
+          'vue/require-slots-as-functions': 'error',
+          'vue/require-toggle-inside-transition': 'error',
+          'vue/prefer-import-from-vue': 'error',
+          'vue/no-watch-after-await': 'error',
+          'vue/no-expose-after-await': 'error',
+        }
 
   return [
     {
@@ -62,31 +103,10 @@ export function createVueConfig(options: CreateVueConfigOptions): Linter.Config[
         'vue/no-async-in-computed-properties': 'error',
         'vue/no-child-content': 'error',
         'vue/no-computed-properties-in-data': 'error',
-        'vue/no-deprecated-data-object-declaration': 'error',
-        'vue/no-deprecated-destroyed-lifecycle': 'error',
-        'vue/no-deprecated-dollar-listeners-api': 'error',
-        'vue/no-deprecated-dollar-scopedslots-api': 'error',
-        'vue/no-deprecated-events-api': 'error',
-        'vue/no-deprecated-filter': 'error',
-        'vue/no-deprecated-functional-template': 'error',
-        'vue/no-deprecated-html-element-is': 'error',
-        'vue/no-deprecated-inline-template': 'error',
-        'vue/no-deprecated-props-default-this': 'error',
-        'vue/no-deprecated-router-link-tag-prop': 'error',
-        'vue/no-deprecated-scope-attribute': 'error',
-        'vue/no-deprecated-slot-attribute': 'error',
-        'vue/no-deprecated-slot-scope-attribute': 'error',
-        'vue/no-deprecated-v-bind-sync': 'error',
-        'vue/no-deprecated-v-is': 'error',
-        'vue/no-deprecated-v-on-native-modifier': 'error',
-        'vue/no-deprecated-v-on-number-modifiers': 'error',
-        'vue/no-deprecated-vue-config-keycodes': 'error',
         'vue/no-dupe-keys': 'error',
         'vue/no-dupe-v-else-if': 'error',
         'vue/no-duplicate-attributes': 'error',
         'vue/no-export-in-script-setup': 'error',
-        'vue/no-expose-after-await': 'error',
-        'vue/no-lifecycle-after-await': 'error',
         'vue/no-mutating-props': 'error',
         'vue/no-parsing-error': 'error',
         'vue/no-ref-as-operand': 'error',
@@ -102,14 +122,9 @@ export function createVueConfig(options: CreateVueConfigOptions): Linter.Config[
         'vue/no-use-computed-property-like-method': 'error',
         'vue/no-use-v-if-with-v-for': 'error',
         'vue/no-useless-template-attributes': 'error',
-        'vue/no-v-for-template-key-on-child': 'error',
         'vue/no-v-text-v-html-on-component': 'error',
-        'vue/no-watch-after-await': 'error',
-        'vue/prefer-import-from-vue': 'error',
         'vue/require-prop-type-constructor': 'error',
         'vue/require-render-return': 'error',
-        'vue/require-slots-as-functions': 'error',
-        'vue/require-toggle-inside-transition': 'error',
         'vue/require-v-for-key': 'error',
         'vue/require-valid-default-prop': 'error',
         'vue/return-in-emits-validator': 'error',
@@ -125,8 +140,6 @@ export function createVueConfig(options: CreateVueConfigOptions): Linter.Config[
         'vue/valid-v-for': 'error',
         'vue/valid-v-html': 'error',
         'vue/valid-v-if': 'error',
-        'vue/valid-v-is': 'error',
-        'vue/valid-v-memo': 'error',
         'vue/valid-v-model': 'error',
         'vue/valid-v-on': 'error',
         'vue/valid-v-once': 'error',
@@ -139,6 +152,7 @@ export function createVueConfig(options: CreateVueConfigOptions): Linter.Config[
         'vue/no-lone-template': 'warn',
         'vue/no-multiple-slot-args': 'warn',
         'vue/this-in-template': 'warn',
+        ...rules,
       },
     },
   ]
