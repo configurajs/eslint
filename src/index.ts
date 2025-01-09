@@ -8,13 +8,16 @@ import {
   createReactConfig,
   createTsConfig,
   createVueConfig,
+  type CreateVueConfigOptions,
 } from './configs'
 import { createRulesConfig } from './configs/rules'
+
+export type DefineConfigOptionsVue = Partial<Pick<CreateVueConfigOptions, 'version'>>
 
 export interface DefineConfigOptions {
   ts?: boolean
   jsx?: boolean
-  vue?: boolean
+  vue?: boolean | DefineConfigOptionsVue
   react?: boolean
   comments?: boolean
   rules?: Linter.RulesRecord
@@ -49,7 +52,7 @@ export function defineConfig(options: DefineConfigOptions = {}): Linter.Config[]
   }
 
   if (vue) {
-    configs.push(...createVueConfig({ ts }))
+    configs.push(...createVueConfig({ ts, version: vue === true ? 3 : (vue.version ?? 3) }))
   }
 
   if (react) {
