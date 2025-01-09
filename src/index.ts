@@ -3,6 +3,7 @@ import {
   createCommentsConfig,
   createIgnoresConfig,
   createJsConfig,
+  createJsdocConfig,
   createJsxConfig,
   createPrettierConfig,
   createReactConfig,
@@ -20,6 +21,7 @@ export interface DefineConfigOptions {
   vue?: boolean | DefineConfigOptionsVue
   react?: boolean
   comments?: boolean
+  jsdoc?: boolean
   rules?: Linter.RulesRecord
   ignores?: string[]
   overrides?: Linter.Config[]
@@ -31,6 +33,7 @@ export function defineConfig(options: DefineConfigOptions = {}): Linter.Config[]
     jsx = true,
     vue = true,
     react = false,
+    jsdoc = true,
     comments = true,
     ignores = [],
     rules = {},
@@ -57,6 +60,10 @@ export function defineConfig(options: DefineConfigOptions = {}): Linter.Config[]
 
   if (react) {
     configs.push(...createReactConfig())
+  }
+
+  if (jsdoc) {
+    configs.push(...createJsdocConfig())
   }
 
   return [...configs, ...createRulesConfig(rules), ...overrides]
