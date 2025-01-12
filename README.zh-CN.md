@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/4e0a0b81-7814-48b1-ae3d-9ce0511e0e9c" width="120" height="120" alt="logo" />
   <h1>@configurajs/eslint</h1>
-  <p>A simple eslint flat configuration</p>
+  <p>一个简单易用的扁平化 eslint 预设</p>
   <p>
     <span>中文</span> | 
     <a href="https://github.com/configurajs/eslint/blob/main/README.md">English</a>
@@ -147,3 +147,7 @@ export interface DefineConfigOptions {
 ## 协议
 
 [MIT](LICENSE)
+
+## 项目参考
+
+本项目架构参考自 [antfu-eslint-config](https://github.com/antfu/eslint-config)。

@@ -147,3 +147,7 @@ export interface DefineConfigOptions {
 ## License
 
 [MIT](LICENSE)
+
+## Inspired By
+
+This project structure is inspired by [antfu-eslint-config](https://github.com/antfu/eslint-config).
