@@ -1,3 +1,10 @@
+# [0.1.0](https://github.com/configurajs/eslint/compare/v0.0.14...v0.1.0) (2025-01-12)
+
+### Features
+
+- add .vscode to default ignores ([#1](https://github.com/configurajs/eslint/issues/1)) ([3ec8362](https://github.com/configurajs/eslint/commit/3ec83620c8395a3cb7f815a94cd04ea58d9334e9))
+- support vue2 ([#2](https://github.com/configurajs/eslint/issues/2)) ([dabddcd](https://github.com/configurajs/eslint/commit/dabddcd65cafa8027e180e099cbe748c702af479))
+
 ## [0.0.14](https://github.com/configurajs/eslint/compare/v0.0.13...v0.0.14) (2025-01-07)
 
 ### Features
