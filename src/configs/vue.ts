@@ -12,7 +12,7 @@ export interface CreateVueConfigOptions {
 export function createVueConfig(options: CreateVueConfigOptions): Linter.Config[] {
   const { ts, version } = options
 
-  const rules: Partial<Linter.RulesRecord> =
+  const versionSpecificRules: Partial<Linter.RulesRecord> =
     version === 2
       ? {
           'vue/comment-directive': 'error',
@@ -152,7 +152,7 @@ export function createVueConfig(options: CreateVueConfigOptions): Linter.Config[
         'vue/no-lone-template': 'warn',
         'vue/no-multiple-slot-args': 'warn',
         'vue/this-in-template': 'warn',
-        ...rules,
+        ...versionSpecificRules,
       },
     },
   ]

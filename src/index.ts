@@ -15,13 +15,42 @@ import { createRulesConfig } from './configs/rules'
 export type DefineConfigOptionsVue = Partial<Pick<CreateVueConfigOptions, 'version'>>
 
 export interface DefineConfigOptions {
+  /**
+   * Enable TypeScript support
+   * @default true
+   */
   ts?: boolean
+  /**
+   * Enable JSX support
+   * @default true
+   */
   jsx?: boolean
+  /**
+   * Enable Vue support, version 3 by default
+   * @default true
+   */
   vue?: boolean | DefineConfigOptionsVue
+  /**
+   * Enable React support
+   * @default false
+   */
   react?: boolean
+  /**
+   * Enable eslint comments support
+   * @default true
+   */
   comments?: boolean
+  /**
+   * Custom rules
+   */
   rules?: Linter.RulesRecord
+  /**
+   * Ignore files
+   */
   ignores?: string[]
+  /**
+   * Override eslint configs
+   */
   overrides?: Linter.Config[]
 }
 
