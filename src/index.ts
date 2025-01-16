@@ -7,6 +7,7 @@ import {
   createPrettierConfig,
   createReactConfig,
   createTsConfig,
+  createVitestConfig,
   createVueConfig,
   type CreateVueConfigOptions,
 } from './configs'
@@ -36,6 +37,11 @@ export interface DefineConfigOptions {
    */
   react?: boolean
   /**
+   * Enable Vitest support
+   * @default false
+   */
+  vitest?: boolean
+  /**
    * Enable eslint comments support
    * @default true
    */
@@ -60,6 +66,7 @@ export function defineConfig(options: DefineConfigOptions = {}): Linter.Config[]
     jsx = true,
     vue = true,
     react = false,
+    vitest = false,
     comments = true,
     ignores = [],
     rules = {},
@@ -86,6 +93,10 @@ export function defineConfig(options: DefineConfigOptions = {}): Linter.Config[]
 
   if (react) {
     configs.push(...createReactConfig())
+  }
+
+  if (vitest) {
+    configs.push(...createVitestConfig())
   }
 
   return [...configs, ...createRulesConfig(rules), ...overrides]
