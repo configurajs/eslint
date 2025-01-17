@@ -1,3 +1,9 @@
+## [0.1.1](https://github.com/configurajs/eslint/compare/v0.1.0...v0.1.1) (2025-01-17)
+
+### Features
+
+- support vitest ([#4](https://github.com/configurajs/eslint/issues/4)) ([9c9ba67](https://github.com/configurajs/eslint/commit/9c9ba671680d191fb29812e72bd977ad67355756))
+
 # [0.1.0](https://github.com/configurajs/eslint/compare/v0.0.14...v0.1.0) (2025-01-12)
 
 ### Features
