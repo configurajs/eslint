@@ -38,7 +38,7 @@ export interface DefineConfigOptions {
   react?: boolean
   /**
    * Enable Vitest support
-   * @default false
+   * @default true
    */
   vitest?: boolean
   /**
@@ -66,7 +66,7 @@ export function defineConfig(options: DefineConfigOptions = {}): Linter.Config[]
     jsx = true,
     vue = true,
     react = false,
-    vitest = false,
+    vitest = true,
     comments = true,
     ignores = [],
     rules = {},

@@ -21,6 +21,7 @@
 - 📦 &nbsp; 支持 typescript 预设
 - 📦 &nbsp; 支持 vue(2 和 3) 预设
 - 📦 &nbsp; 支持 react 预设
+- 📦 &nbsp; 支持 vitest 预设
 - 📦 &nbsp; 支持 jsx 预设
 - 📦 &nbsp; 支持 eslint comments 预设
 - 📦 &nbsp; 支持覆盖 eslint 配置
@@ -114,6 +115,11 @@ export interface DefineConfigOptions {
    * @default false
    */
   react?: boolean
+  /**
+   * 启用 Vitest 支持
+   * @default true
+   */
+  vitest?: boolean
   /**
    * 启用 eslint 注释支持
    * @default true
