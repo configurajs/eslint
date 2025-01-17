@@ -22,6 +22,7 @@
 - 📦 &nbsp; Support vue(2 and 3) presets
 - 📦 &nbsp; Support react presets
 - 📦 &nbsp; Support jsx presets
+- 📦 &nbsp; Support vitest presets
 - 📦 &nbsp; Support eslint comments presets
 - 📦 &nbsp; Support overrides eslint config
 
@@ -114,6 +115,11 @@ export interface DefineConfigOptions {
    * @default false
    */
   react?: boolean
+  /**
+   * Enable Vitest support
+   * @default true
+   */
+  vitest?: boolean
   /**
    * Enable eslint comments support
    * @default true
