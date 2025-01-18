@@ -14,7 +14,6 @@ export function createVitestConfig(): Linter.Config[] {
       name: createConfigName('vitest/rules'),
       files: ['**/*.{test,spec}.?(c|m)[jt]s?(x)'],
       rules: {
-        'vitest/expect-expect': 'error',
         'vitest/no-commented-out-tests': 'warn',
         'vitest/no-identical-title': 'error',
         'vitest/no-import-node-test': 'warn',
