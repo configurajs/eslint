@@ -1,3 +1,5 @@
+## [0.1.2](https://github.com/configurajs/eslint/compare/v0.1.1...v0.1.2) (2025-01-21)
+
 ## [0.1.1](https://github.com/configurajs/eslint/compare/v0.1.0...v0.1.1) (2025-01-17)
 
 ### Features
