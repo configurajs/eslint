@@ -13,7 +13,12 @@ export function createPrettierConfig(): Linter.Config[] {
     {
       name: createConfigName('prettier/rules'),
       rules: {
-        'prettier/prettier': 'error',
+        'prettier/prettier': [
+          'error',
+          {
+            endOfLine: 'auto',
+          },
+        ],
       },
     },
   ]
